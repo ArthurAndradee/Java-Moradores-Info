@@ -18,7 +18,7 @@ public class App {
             System.out.print("Idade: ");
             age = read.nextInt();
             
-            if (age <= 0) {
+            if (age > 0) {
                 System.out.print("Salário: ");
                 salario = read.nextInt();
             
@@ -33,7 +33,7 @@ public class App {
                 read.nextLine(); // clear the buffer
             }
             
-        } while (age <= 0);
+        } while (age > 0);
 
         //Calcular média dos salários
         double averageSalary = Morador.getAverageSalary();
